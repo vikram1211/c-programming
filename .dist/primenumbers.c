@@ -1,5 +1,21 @@
 #include<stdio.h>
+#include<stdbool.h>
 
+bool (is_prime(n))
+{
+    if(n<=1)
+    {
+        return false;
+    }
+    for (int i = 2; i*i <= n; i++)
+    {
+        if (n%i==0)
+        {
+            return false;
+        } 
+    }
+    return true;   
+}
 int main(void)
 {
     int a,b;
@@ -7,68 +23,11 @@ int main(void)
     scanf("%d",&a);
     printf("\n Enter the upper bound of the range:");
     scanf("%d",&b);
-    for (int i=a;i<=b; i++)
+    for (int z=a;z<=b; z++)
     {
-        if(i%1==0)
+        if (is_prime(z))
         {
-            if(i==1)
-            {
-                continue;
-            }
-            else if(i%2==0)
-            {
-                if (i==2)
-                {
-                    printf("%d ",i);
-                }
-                else
-                {
-                   continue;
-                }
-                
-            }
-            else if(i%3==0)
-            {
-                if(i==3)
-                {
-                    printf("%d ",i);
-                }
-                else
-                {
-                    continue;
-                }
-                
-            }
-            else if(i%5==0)
-            {
-                if(i==5)
-                {
-                    printf("%d ",i);
-                }
-                else
-                {
-                    continue;
-                }
-            }
-            else if(i%7==0)
-            {
-                if(i==7)
-                {
-                    printf("%d ",i);
-                }
-                else
-                {
-                    continue;;
-                }
-            }
-            else
-            {
-                printf("%d ",i);
-            }
+            printf("%d ",z);
         }
-        else
-        {
-            continue;
-        }
-    }  
+    }
 }
