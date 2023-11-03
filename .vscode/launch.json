@@ -235,8 +235,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Vikram Rakesh  Dandu/Desktop/c-programming",
-      "program": "c:/Users/Vikram Rakesh  Dandu/Desktop/c-programming/build/Debug/outDebug",
+      "cwd": "c:/Users/Vikram Rakesh  Dandu/Desktop/c-programming/.dist",
+      "program": "c:/Users/Vikram Rakesh  Dandu/Desktop/c-programming/.dist/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
